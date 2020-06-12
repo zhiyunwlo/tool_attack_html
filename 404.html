@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="YoviSun个人应用系列，科研生活，无处不在。"/> 
+<meta name="keywords" content="微博应用, 孙飞, yovisun, 在水一方, 华中科技大学, 期刊分类目录, 校园网IP, HTML, JavaScript, RGB, JSON, 大写金额" /> 
+<meta name="author" contect="孙飞, yovisun, YoviSun.COM" /> 
+<title>YoviSun工具集</title>
+<style>
+*{
+	margin: 0px;
+	padding: 0px;}
+img{
+	border:none;}
+a{ color:#0066bb;text-decoration:none;}
+
+a:hover{
+	text-decoration:underline;}
+ul{	
+	list-style:none;}
+body{
+	font-family:Microsoft YaHei, Arial, Verdana, Sans-Serif,微软雅黑,黑体,宋体;
+	line-height:28px;}
+#wrapper{
+margin:0 auto;
+width:618px;
+margin-top:10px;}
+#header{
+	text-align:center;
+	border-bottom: 1px solid #999;
+	padding-bottom:10px;}
+#footer{
+    font-size:12px;
+	border-top: 1px solid #999;
+	padding-top:10px;}
+#footer a{
+    color:#000;
+    text-decoration:none;}
+#footer a:hover{
+    color:#000;
+    text-decoration:none;}
+#main{
+	padding: 10px 0;}
+.item{
+	margin-top:10px;}
+.item h3{
+	font-size:18px;
+    font-weight:normal;}
+        
+.item .title{
+	color:#000;    
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px dashed #999;
+    background: #fcd207;
+    font-size: 14px;
+    line-height: 20px;}
+.item .title a{
+	color:#000;
+    text-decoration:none;}
+.item .title a:hover{
+	color:#000;
+    text-decoration:none;}  
+.item .tips{
+    color:#666;
+    font-size:12px;
+    line-height:18px;
+    padding: 5px 20px 5px 20px;}
+.item .link{
+    padding: 0px 20px 0px 20px;
+    font-size:12px;}
+.item .link a{
+        
+        color:#666;}
+</style>
+    
+</head>
+<body>
+<style>
+.attack-alert{line-height:20px;font-size:14px; margin-top:0px;padding:5px 10px; border: 1px solid #f5c6cb;color:#721c24;background-color:#f8d7da;text-align:center;}
+</style>
+<div class="attack-alert">
+很遗憾的通知您，我们的服务器正在被恶意攻击中，给您带来的不便望请谅解<br>
+您现在看到的是临时页面，我们检测到攻击结束后，会重新打开系统<br>请同行们手下留情，您的攻击只会坚定我公益服务的决心
+</div>
+<div id="wrapper">
+    <div id="header" style="background:url('favicon.ico') no-repeat;">YoviSun工具集</div><!-- #header end -->
+    <div id="main">
+        
+        <div class="item" style="margin-top:0;">
+            <h3 class="title"><a href="./scihub/"  target="_blank">SCI-Hub可用网址链接</a></h3>
+            <div class="tips">实时自动检测并更新SCI-Hub的可用网址链接，只要输入文献的标题、或者链接、或者DOI、或者PubMed号，就可以下载到文献全文，简单快速的让你难易想象。这个过程中不需要你购买任何数据库的权限，完全免费。</div>
+        </div>
+        
+        <div class="item" style="margin-top:0;">
+            <h3 class="title"><a href="http://tool.yovisun.com/gs/"  target="_blank">谷歌学术『Google』最新可用网址</a></h3>
+            <div class="tips">提供谷歌学术（Google Scholar）和谷歌搜索的最新可用网址，高效秒开谷歌所有站点，自动检测实时更新，可免费下载国内外广大文献论文，为广大科研工作者提供全方位服务</div>
+        </div>
+        
+        <div class="item" >
+            <h3 class="title"><a href="./journal/" target="_blank">学术期刊影响因子及分类分区目录</a></h3>
+            <div class="tips">华中科技大学学术期刊分类目录（T-D）查询，提供SCI期刊查询，信息包括排名、ISSN、影响因子、近五年影响因子、主题、分类等信息。提供期刊关键字查询和ISSN号查询，支持模糊查询，可以使用*号进行匹配。</div>
+            <div class="link"><a href="./journal/index.php" target="_blank">2014年分区表</a>　<a href="./journal/hust2012.php" target="_blank">2012年分区表</a>　<a href="./journal/hust2011.php" target="_blank">2011年分类目录</a>　<a href="./journal/hust2012mse.php" target="_blank">材料学院2012年国际一流期刊</a></div>
+        </div>
+        
+        
+        
+        
+                <div class="item">
+            <h3 class="title"><a href="./kuaidi/"  target="_blank">智能快递查询</a></h3>
+            <div class="tips">直接输入快递单号，系统自动匹配快递类型，支持几乎99%的快递公司</div>
+        </div>
+        
+                <div class="item">
+            <h3 class="title"><a href="./grabvideo/"  target="_blank">在线视频智能解析下载</a></h3>
+            <div class="tips">输入视频的网址，系统自动识别并解析真实的视频网址提供下载。支持优酷、土豆、酷六、爱奇艺、乐视、PPTV、PPS、腾讯、首富、凤凰、湖南TV、迅雷看看、人人、56、新浪、天翼等网站。</div>
+        </div>
+        
+        
+                <div class="item" style="margin-top:0;">
+            <h3 class="title"><a href="./unit/" target="_blank">计量单位换算器</a></h3>
+            <div class="tips">可实现不同计量单位制的换算。</div>
+            <div class="link"><a href="./unit/length.php" target="_blank">长度计量单位换算器</a>　<a href="./unit/weight.php" target="_blank">重量计量单位换算器</a></div>
+        </div>
+        <div class="item" style="margin-top:0;">
+            <h3 class="title"><a href="./wordcounter/" target="_blank">WordCounter 英文论文单词统计</a></h3>
+            <div class="tips">可以对英文论文的单词进行统计，统计的内容包括：单词数，字符数，句子数，段落数。关键词密度。</div>
+        </div>
+
+        
+  
+        <div class="item">
+            <h3 class="title"><a href="./htmljs/" target="_blank" >HTML/JavaScript格式化及加密压缩工具</a></h3>
+            
+            
+            <div class="tips">可以对Javascript和HTML代码进行格式化排版，整齐的进行显示。同时可以对javascrit代码进行压缩和加密。</div>
+            <h3 class="title"><a href="https://www.bejson.com/" target="_blank" >BBeJSON 工具</a></h3>
+        </div>  
+        <div class="item">
+            <h3 class="title"><a href="./alphabet/" target="_blank" >英文单词大小写转换</a></h3>
+            <div class="tips">英文单词大小写转换，根据输入自动将单词转换为大写形式、小写形式以及单词首字母大写形式。</div>
+        </div>   
+        
+        <div class="item">
+            <h3 class="title"><a href="./rgbcolor/"  target="_blank">RGB颜色在线拾取与转换</a></h3>
+            <div class="tips">提供类似于PhotoShop的颜色拾取器，前端设计利器，方便查看颜色的RGB值及十六进制值，可以进行转换查询。另外，提供常见颜色的代码。</div>
+        </div>        
+        <div class="item">
+            <h3 class="title"><a href="./json/"  target="_blank">JSON代码格式化及着色工具</a></h3>
+            <div class="tips">JSON代码格式化及着色工具，自动识别json格式是否正确，格式化输出，方便查看。</div>
+        </div>
+        <div class="item">
+            <h3 class="title"><a href="./rmb/"  target="_blank">数字转换成大写金额</a></h3>
+            <div class="tips">输入金额的阿拉伯数字，实时转换为中文的大写形式。</div>
+        </div>
+        <div class="item">
+            <h3 class="title"><a href="http://tool.chinaz.com/" target="_blank">站长工具</a></h3>
+            <div class="tips">站长工具是站长的必备工具。经常上站长工具可以了解SEO数据变化。还可以检测网站死链接、蜘蛛访问、HTML格式检测、网站速度测试、友情链接检查、网站域名IP查询、PR、权重查询、alexa、whois查询等等。</div>
+        </div>
+        <div class="item">
+            <h3 class="title"><a href="./tianqi/" target="_blank">未来一小时天气精准查询</a></h3>
+            <div class="tips">未来一小时天气精准查询。</div>
+        </div>
+        
+        <div class="item">
+            <h3 class="title"><a href="./hustip/"  target="_blank">华中科技大学校园网IP查询</a></h3>
+            <div class="tips">华中科技大学校园网IP查询，自动判断</div>
+        </div>
+        
+        <div class="item">
+            <h3 class="title"><a href="./longlat/" target="_blank">经纬度查询两点距离</a></h3>
+            <div class="tips">通过输入两点的经纬度坐标，得到两点之间的实际距离</div>
+        </div>
+        
+        
+      </div><!-- #main end -->    
+    <div id="footer">Copyright &copy; 2010-2020 <a href="http://www.yovisun.com/" target="_blank">YoviSun.COM</a>, All Right Reserved |  <a href="http://www.yovisun.com/" target="_blank">Home</a> |  
+    <a href="http://www.yovisun.com/guestbook/" target="_blank">如有建议，欢迎提出，点击这里留言</a>
+    </div><!-- #footer end -->
+</div>
+    
+<!-- 百度统计 -->
+<div class="tongji" style="display:none;">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?44a5dca08d6c959322ef76aaa34e6a28";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div> 
+<!-- end 统计 --> 
+
+</body>
+</html>
