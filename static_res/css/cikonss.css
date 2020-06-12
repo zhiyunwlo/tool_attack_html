@@ -1,0 +1,918 @@
+/*
+ * Cikonss v1.0
+ *
+ * URL: https://github.com/zzap/Cikonss
+ * License: MIT License
+ *
+ */
+
+/* Generals */
+.ckicon {
+	/* don't change width and height in order to change the size of the icon,
+	you can control the size with font-size for different class(es) - below */
+	line-height: 100%;
+	width: 1em;
+	height: 1em;
+	position: relative;
+	display: block;
+	float: left;
+}
+/* Button like icons */
+.ckicon-square,
+.ckicon-rounded {
+	border: .75em solid rgb(242, 242, 242); /* #f2f2f2 */
+	background-color: rgb(242, 242, 242); /* #f2f2f2 */
+	margin: 0 .5em .5em 0;
+	/* for browsers that supports */
+	-webkit-box-shadow: 0 0 0 .0625em rgb(226, 226, 226); /* #e2e2e2 */
+	-moz-box-shadow: 0 0 0 .0625em rgb(226, 226, 226); /* #e2e2e2 */
+	box-shadow: 0 0 0 .0625em rgb(226, 226, 226); /* #e2e2e2 */
+}
+.ckicon-rounded {
+	border-radius: 1.5em;
+}
+/*
+ * Sizes
+ *
+ * 5 preset sizes, simply change the font-size or add your custom class.
+ *
+ */
+.ckicon-small {
+	font-size: 1em;
+}
+.ckicon-mid {
+	font-size: 2em;
+}
+.ckicon-large {
+	font-size: 4em;
+}
+.ckicon-extra-large {
+	font-size: 8em;
+}
+.ckicon-huge {
+	font-size: 12em;
+}
+
+/*
+ * Icons
+ *
+ * Icons are somewhat grouped so that you can easily pick the ones you like
+ * if the whole file is too large for your project.
+ *
+ */
+
+/* Home */
+.ckicon-home {
+	position: absolute;
+	top: 0;
+	left: .125em;
+	width: .25em;
+	height: .5em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-home:before,
+.ckicon-home:after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+}
+.ckicon-home:before {
+	top: .5em;
+	left: 0;
+	width: .25em;
+	height: .3125em;
+	border-width: .1875em .25em 0 .25em;
+	border-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-home:after {
+	top: -.5em;
+	left: -.125em;
+	width: 0;
+	height: 0;
+	border-width: .5em;
+	border-color: transparent transparent rgb(102, 102, 102) transparent; /* #666 */
+}
+
+/* Arrows */
+.ckicon-arrowRight,
+.ckicon-arrowLeft,
+.ckicon-arrowDown,
+.ckicon-arrowUp {
+	position: absolute;
+	width: .5em;
+	height: .5em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-arrowRight:after,
+.ckicon-arrowLeft:after,
+.ckicon-arrowDown:after,
+.ckicon-arrowUp:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: .5em;
+	border-style: solid;
+}
+/* Arrows - Left and Right */
+.ckicon-arrowRight,
+.ckicon-arrowLeft {
+	top: .25em;
+}
+.ckicon-arrowRight {
+	left: 0;
+}
+.ckicon-arrowLeft {
+	right: 0;
+}
+.ckicon-arrowRight:after,
+.ckicon-arrowLeft:after {
+	top: -.25em;
+}
+.ckicon-arrowRight:after {
+	left: .5em;
+	border-color: transparent transparent transparent rgb(102, 102, 102); /* #666 */
+}
+.ckicon-arrowLeft:after {
+	right: .5em;
+	border-color: transparent rgb(102, 102, 102) transparent transparent; /* #666 */
+}
+/* Arrows -  Down and Up */
+.ckicon-arrowDown,
+.ckicon-arrowUp {
+	left: .25em;
+}
+.ckicon-arrowDown {
+	top: 0;
+}
+.ckicon-arrowUp,
+.ckicon-arrowDown:after {
+	top: .5em;
+}
+.ckicon-arrowDown:after,
+.ckicon-arrowUp:after {
+	left: -.25em;
+}
+.ckicon-arrowDown:after {
+	border-color: rgb(102, 102, 102) transparent transparent transparent; /* #666 */
+}
+.ckicon-arrowUp:after {
+	top: -1em;
+	border-color: transparent transparent rgb(102, 102, 102) transparent; /* #666 */
+}
+
+/* Comments */
+.ckicon-comment,
+.ckicon-comment-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: .75em;
+	background-color: rgb(102, 102, 102); /* #666 */
+	/* for browsers that supports */
+	border-radius: .125em;
+}
+.ckicon-comment:after,
+.ckicon-comment-text:before,
+.ckicon-comment-text:after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+}
+.ckicon-comment-text:before {
+	top: .1875em;
+	left: .125em;
+	width: .75em;
+	height: .125em;
+	border-width: .09375em 0;
+	border-color: rgb(249, 249, 249); /* #f9f9f9 */
+}
+.ckicon-comment:after,
+.ckicon-comment-text:after {
+	top: .75em;
+	left: .25em;
+	width: 0;
+	height: 0;
+	border-width: .125em;
+	border-color: rgb(102, 102, 102) transparent transparent rgb(102, 102, 102); /* #666 */
+}
+
+/* Mail */
+.ckicon-mail {
+	position: absolute;
+	top: .15625em;
+	left: 0;
+	width: 1em;
+	height: .75em;
+	background-color: rgb(102, 102, 102); /*#666*/
+}
+.ckicon-mail:before,
+.ckicon-mail:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-width: .4em .5em;
+	border-style: solid;
+}
+.ckicon-mail:before {
+	top: 0;
+	border-color: rgb(249, 249, 249) transparent transparent transparent; /* #f9f9f9 */
+}
+.ckicon-mail:after {
+	top: -.0625em;
+	border-color: rgb(102, 102, 102) transparent transparent transparent; /* #666 */
+}
+
+/* Calendar */
+.ckicon-calendar{
+	position: absolute;
+	top: .125em;
+	left: 0;
+	width: .875em;
+	height: .6875em;
+	border-width: .125em .0625em .0625em .0625em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+	background-color: rgb(249, 249, 249); /* #f9f9f9 */
+	/* for browsers that supports */
+	border-radius: .0625em;
+}
+.ckicon-calendar:before{
+	content: "";
+	position: absolute;
+	top: -.25em;
+	left: .125em;
+	width: .375em;
+	height: .125em;
+	border-width: 0 .125em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-calendar:after{
+	content: "15";
+	position: absolute;
+	top: -.25em;
+	left: .25em;
+	font-family: Arial, sans-serif;
+	font-size: .5em;
+	font-weight: bold;
+	color: rgb(102, 102, 102); /* #666 */
+}
+
+/* Plus */
+.ckicon-plus,
+.ckicon-plus:after {
+	position: absolute;
+	width: .375em;
+	height: .375em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-plus {
+	top: 0;
+	left: 0;
+	border-width: 0 .25em .25em 0;
+}
+.ckicon-plus:after {
+	content: "";
+	top: .375em;
+	left: .375em;
+	border-width: .25em 0 0 .25em;
+}
+
+/* Minus */
+.ckicon-minus {
+	position: absolute;
+	top: .375em;
+	left: 0;
+	width: 1em;
+	height: .25em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+
+/* File */
+.ckicon-file {
+	position: absolute;
+	top: 0;
+	left: .125em;
+	width: .5em;
+	height: .75em;
+	border-width: .125em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+	background-color: rgb(249, 249, 249); /* #f9f9f9 */
+	/* for browsers that supports */
+	border-radius: .0625em;
+}
+.ckicon-file:before {
+	content: "";
+	position: absolute;
+	top: -.125em;
+	left: -.125em;
+	width: 0;
+	height: 0;
+	border-width: .15625em;
+	border-style: solid;
+	border-color: rgb(255, 255, 255) rgb(102, 102, 102) rgb(102, 102, 102) rgb(255, 255, 255); /* #fff and #666 - #fff has to mach body bg*/
+}
+.ckicon-square .ckicon-file:before,
+.ckicon-rounded .ckicon-file:before {
+	border-color: rgb(242, 242, 242) rgb(102, 102, 102) rgb(102, 102, 102) rgb(242, 242, 242); /* #f2f2f2 and #666 - #f2f2f2 has to mach with .ckicon-square and .ckicon-rounded bg*/
+}
+
+/* Folder */
+.ckicon-folder {
+	position: absolute;
+	top: .125em;
+	left: 0;
+	width: 1em;
+	height: .875em;
+	background-color: rgb(102, 102, 102); /* #666 */
+	/* for browsers that supports */
+	border-bottom-left-radius: .0625em;
+	border-bottom-right-radius: .0625em;
+}
+.ckicon-folder:before {
+	content: "";
+	position: absolute;
+	top: -.125em;
+	left: .125em;
+	width: .375em;
+	height: .125em;
+	background-color: rgb(102, 102, 102); /* #666 */
+	/* for browsers that supports */
+	border-top-left-radius: .0625em;
+	border-top-right-radius: .0625em;
+}
+
+/* Tag */
+.ckicon-tag {
+	position: absolute;
+	top: 0;
+	left: .25em;
+	width: .5em;
+	height: .75em;
+	background-color: rgb(102, 102, 102); /* #666 */
+	/* for browsers that supports */
+	border-top-left-radius: .0625em;
+	border-top-right-radius: .0625em;
+}
+.ckicon-tag:before,
+.ckicon-tag:after {
+	content: "";
+	position: absolute;
+	top: .75em;
+	width: 0;
+	height: 0;
+	border-width: .125em;
+	border-style: solid;
+}
+.ckicon-tag:before {
+	left: 0;
+	border-color: rgb(102, 102, 102) transparent transparent rgb(102, 102, 102); /* #666 */
+}
+.ckicon-tag:after {
+	left: .25em;
+	border-color: rgb(102, 102, 102) rgb(102, 102, 102) transparent transparent; /* #666 */
+}
+
+/* Desktop */
+.ckicon-desktop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: .875em;
+	height: .625em;
+	border-width: .0625em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+	background-color: rgb(249, 249, 249); /* #f9f9f9 */
+	/* for browsers that supports */
+	border-radius: .0625em;
+}
+.ckicon-desktop:before,
+.ckicon-desktop:after {
+	content: "";
+	position: absolute;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-desktop:before {
+	top: .6875em;
+	left: .3125em;
+	width: .25em;
+	height: .1875em;
+}
+.ckicon-desktop:after {
+	top: .875em;
+	left: .125em;
+	width: .625em;
+	height: .0625em;
+}
+
+/* Tablet */
+.ckicon-tablet {
+	position: absolute;
+	top: .0625em;
+	left: 0;
+	width: .75em;
+	height: .625em;
+	border-width: .125em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+	background-color: rgb(249, 249, 249); /* #f9f9f9 */
+	/* for browsers that supports */
+	border-radius: .0625em;
+}
+.ckicon-tablet:before {
+	content: "";
+	position: absolute;
+	top: .28125em;
+	left: -.09375em;
+	width: .0625em;
+	height: .0625em;
+	background-color: rgb(255, 255, 255); /* #fff */
+	/* for browsers that supports */
+	border-radius: .0625em;
+}
+
+/* Phone */
+.ckicon-phone {
+	position: absolute;
+	top: 0;
+	left: .1875em;
+	width: .5em;
+	height: .75em;
+	border-width: .125em .0625em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+	background-color: rgb(249, 249, 249); /* #f9f9f9 */
+	/* for browsers that supports */
+	border-radius: .0625em;
+}
+.ckicon-phone:after {
+	content: "";
+	position: absolute;
+	top: .78125em;
+	left: .21875em;
+	width: .0625em;
+	height: .0625em;
+	background-color: rgb(255, 255, 255); /* #fff */
+	/* for browsers that supports */
+	border-radius: .0625em;
+}
+
+/* Menu */
+.ckicon-menu,
+.ckicon-menu:before,
+.ckicon-menu:after {
+	position: absolute;
+	left: 0;
+	width: 1em;
+	height: .25em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-menu {
+	top: .0625em;
+}
+.ckicon-menu:before {
+	content: "";
+	top: .3125em;
+}
+.ckicon-menu:after {
+	content: "";
+	top: .625em;
+}
+
+/* Download  and Upload */
+.ckicon-download,
+.ckicon-upload {
+	position: absolute;
+	left: .375em;
+	width: .25em;
+	height: .5em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-download {
+	top: 0;
+}
+.ckicon-upload {
+	top: .25em;
+}
+.ckicon-download:before,
+.ckicon-upload:before {
+	content: "";
+	position: absolute;
+	left: -.125em;
+	width: 0;
+	height: 0;
+	border-width: .25em;
+	border-style: solid;
+}
+.ckicon-download:before {
+	top: .5em;
+	border-color: rgb(102, 102, 102) transparent transparent transparent; /* #666 */
+}
+.ckicon-upload:before {
+	top: -.5em;
+	border-color: transparent transparent rgb(102, 102, 102) transparent; /* #666 */
+}
+.ckicon-download:after,
+.ckicon-upload:after {
+	content: "";
+	position: absolute;
+	left: -.375em;
+	width: .75em;
+	height: .125em;
+	border-width: 0 .125em .125em .125em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-download:after {
+	top: .75em;
+}
+.ckicon-upload:after {
+	top: .5em;
+}
+
+/* Page Templates */
+.ckicon-tpl-full,
+.ckicon-tpl-side-r,
+.ckicon-tpl-side-l {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: .25em;
+	background-color: rgb(102, 102, 102);
+}
+.ckicon-tpl-full:after,
+.ckicon-tpl-side-r:before,
+.ckicon-tpl-side-r:after,
+.ckicon-tpl-side-l:before,
+.ckicon-tpl-side-l:after {
+	content: "";
+	position: absolute;
+	top: .3125em;
+	height: .6875em;
+	background-color: rgb(102, 102, 102);
+}
+.ckicon-tpl-full:after,
+.ckicon-tpl-side-r:before,
+.ckicon-tpl-side-l:before {
+	left: 0;
+}
+.ckicon-tpl-full:after {
+	width: 1em;
+}
+.ckicon-tpl-side-r:before,
+.ckicon-tpl-side-l:after {
+	width: .6875em;
+}
+.ckicon-tpl-side-r:after,
+.ckicon-tpl-side-l:before {
+	width: .25em;
+}
+.ckicon-tpl-side-r:after {
+	left: .75em;
+}
+.ckicon-tpl-side-l:after {
+	left: .3125em;
+}
+
+/* Views */
+/* List view */
+.ckicon-list-view,
+.ckicon-list-view:before,
+.ckicon-list-view:after {
+	position: absolute;
+	width: .0625em;
+	height: .25em;
+	border-width: 0 .6875em 0 .25em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102);
+}
+.ckicon-list-view {
+	top: .0625em;
+	left: 0;
+}
+.ckicon-list-view:before,
+.ckicon-list-view:after {
+	content: "";
+	left: -.25em;
+}
+.ckicon-list-view:before {
+	top: .3125em;
+}
+.ckicon-list-view:after {
+	top: .625em;
+}
+/* Grid view */
+.ckicon-grid-view,
+.ckicon-grid-view:before {
+	position: absolute;
+	width: .0625em;
+	height: .46875em;
+	border-width: 0 .46875em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102);
+}
+.ckicon-grid-view {
+	top: 0;
+	left: 0;
+}
+.ckicon-grid-view:before {
+	content: "";
+	top: .53125em;
+	left: -.46875em;
+}
+
+/* Camera */
+.ckicon-camera {
+	position: absolute;
+	top: .25em;
+	left: 0;
+	width: .75em;
+	height: .5em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-camera:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: .5em;
+	width: 0;
+	height: 0;
+	border-width: .25em;
+	border-style: solid;
+	border-color: transparent rgb(102, 102, 102) transparent transparent; /* #666 */
+}
+
+/* Image */
+.ckicon-image {
+	position: absolute;
+	top: .125em;
+	left: 0;
+	width: .875em;
+	height: .625em;
+	border-width: .0625em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+	/* for browsers that supports */
+	border-radius: .0625em;
+}
+.ckicon-image:before,
+.ckicon-image:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent transparent rgb(102, 102, 102) transparent; /* #666 */
+}
+.ckicon-image:before {
+	left: 0;
+	border-width: .25em .25em .125em .125em;
+}
+.ckicon-image:after {
+	right: 0;
+	border-width: .25em .25em .375em .375em;
+}
+
+/* Player controls */
+/* Play */
+.ckicon-play {
+	position: absolute;
+	top: 0;
+	left: .1875em;
+	width: 0;
+	height: 0;
+	border-width: .5em .625em;
+	border-style: solid;
+	border-color: transparent transparent transparent rgb(102, 102, 102); /* #666 */
+}
+/* Stop */
+.ckicon-stop {
+	position: absolute;
+	top: .0625em;
+	left: .0625em;
+	width: .875em;
+	height: .875em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+/* Pause */
+.ckicon-pause,
+.ckicon-pause:after {
+	position: absolute;
+	width: .25em;
+	height: .875em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-pause {
+	top: .0625em;
+	left: .21875em;
+}
+.ckicon-pause:after {
+	content: "";
+	top: 0;
+	left: .3125em;
+}
+/* Forward, Next, Rewind and Prev */
+.ckicon-forward,
+.ckicon-next,
+.ckicon-rewind,
+.ckicon-prev,
+.ckicon-forward:after,
+.ckicon-next:before,
+.ckicon-rewind:after,
+.ckicon-prev:before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: .4375em;
+	border-style: solid;
+}
+.ckicon-forward,
+.ckicon-next,
+.ckicon-rewind,
+.ckicon-prev {
+	top: .0625em;
+}
+.ckicon-forward:after,
+.ckicon-next:before,
+.ckicon-rewind:after,
+.ckicon-prev:before,
+.ckicon-next:after,
+.ckicon-prev:after {
+	content: "";
+	top: -.4375em;
+}
+.ckicon-forward,
+.ckicon-next,
+.ckicon-forward:after,
+.ckicon-next:before {
+	border-color: transparent transparent transparent rgb(102, 102, 102); /* #666 */
+}
+.ckicon-rewind,
+.ckicon-prev,
+.ckicon-rewind:after,
+.ckicon-prev:before {
+	border-color: transparent rgb(102, 102, 102) transparent transparent; /* #666 */
+}
+.ckicon-forward {
+	left: .0625em;
+}
+.ckicon-rewind {
+	right: .0625em;
+}
+.ckicon-next,
+.ckicon-forward:after,
+.ckicon-next:before {
+	left: 0;
+}
+.ckicon-prev,
+.ckicon-rewind:after,
+.ckicon-prev:before {
+	right: 0;
+}
+.ckicon-next:after,
+.ckicon-prev:after {
+	position: absolute;
+	width: .125em;
+	height: .875em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-next:after {
+	left: .4375em;
+}
+.ckicon-prev:after {
+	right: .4375em;
+}
+
+/* Stats */
+.ckicon-stats,
+.ckicon-stats:before {
+	position: absolute;
+	width: .3125em;
+	border-width: 0 .1875em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-stats {
+	top: 0;
+	left: 0;
+	height: .875em;
+}
+.ckicon-stats:before {
+	content: "";
+	top: .3125em;
+	left: .0625em;
+	height: .5625em;
+}
+.ckicon-stats:after {
+	content: "";
+	position: absolute;
+	top: .875em;
+	left: -.1875em;
+	width: 1em;
+	height: .125em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+
+/* Battery */
+.ckicon-battery-empty,
+.ckicon-battery-1_4,
+.ckicon-battery-half,
+.ckicon-battery-3_4,
+.ckicon-battery-full {
+	position: absolute;
+	top: .25em;
+	left: 0;
+	width: .75em;
+	height: .375em;
+	border-width: .0625em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102); /* #666 */
+	background-color: rgb(249, 249, 249); /* #f9f9f9 */
+}
+.ckicon-battery-empty:after,
+.ckicon-battery-1_4:after,
+.ckicon-battery-half:after,
+.ckicon-battery-3_4:after,
+.ckicon-battery-full:after {
+	content: "";
+	position: absolute;
+	top: .0625em;
+	left: .8125em;
+	width: .125em;
+	height: .25em;
+	background-color: rgb(102, 102, 102); /* #666 */
+}
+.ckicon-battery-1_4:before,
+.ckicon-battery-half:before,
+.ckicon-battery-3_4:before,
+.ckicon-battery-full:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: .375em;
+	background-color: rgb(153, 153, 153); /* #999 */
+}
+.ckicon-battery-1_4:before {
+	width: .1875em;
+}
+.ckicon-battery-half:before {
+	width: .375em;
+}
+.ckicon-battery-3_4:before {
+	width: .5625em;
+}
+.ckicon-battery-full:before {
+	width: .75em;
+}
+
+/* Sound */
+.ckicon-sound-mute,
+.ckicon-sound-normal,
+.ckicon-sound-loud {
+	position: absolute;
+	top: .375em;
+	left: .09375em;
+	width: .25em;
+	height: .25em;
+	background-color: rgb(102, 102, 102);
+}
+.ckicon-sound-mute:before,
+.ckicon-sound-normal:before,
+.ckicon-sound-loud:before {
+	content: "";
+	position: absolute;
+	top: -.3125em;
+	left: -.3125em;
+	width: .375em;
+	height: .375em;
+	border-width: .25em;
+	border-style: solid;
+	border-color: transparent rgb(102, 102, 102) transparent transparent;
+}
+.ckicon-sound-normal:after,
+.ckicon-sound-loud:after {
+	content: "";
+	position: absolute;
+	top: -.125em;
+	left: .625em;
+	width: .0625em;
+	height: .53125em;
+	border-style: solid;
+	border-color: rgb(102, 102, 102);
+}
+.ckicon-sound-normal:after {
+	border-width: 0 0 0 .0625em;
+}
+.ckicon-sound-loud:after {
+	border-width: 0 .0625em;
+}

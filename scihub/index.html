@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SCI-Hub论文下载可用网址链接（实时更新） - YoviSun工具集</title>
+<meta name="Description" content="本站是国内最大、影响最广的SCIHub论文下载链接站，24小时自动检测SCI-Hub的最新可用网址，免费下载SCI论文，为广大科研工作者提供志愿服务，欢迎使用。" />
+<meta name="Keywords" content="SCI-Hub,Scihub,可用链接,最新网址,论文下载,免费下载,SCI查询,科研论文" />
+<link rel='stylesheet' type='text/css' href='js/bootstrap/css/bootstrap.min.css' /> 
+<script type="text/javascript" src="js/jquery.min.js"></script>  
+<script language='javascript' src='js/bootstrap/js/bootstrap.min.js'></script>
+<script>
+if (self!=top){
+    window.top.location.replace(self.location); //打开自己网站的页面
+}
+
+function scihub_clickLinkAdd(id){
+    $.get("scihub_ajax_click.php?rands=" + new Date().valueOf(), { "id": id ,"type":"scihublink"} );
+}
+</script>
+    
+
+<script>
+/*
+*	搜索提交判断
+*/
+function checkSearch(obj){
+	$("#keywords").val($.trim($("#keywords").val()));
+	if($("#keywords").val()==""){
+		alert("请输入搜索关键词");
+		$("#keywords").focus();
+		return false;
+	}	
+}
+    
+    
+function clickAdd(id){
+    $.get("/journal/ajax_click.php?rands=" + new Date().valueOf(), { "id": id ,"type":"headmenu"} );
+}
+
+
+$(document).ready(function(){
+    if($.trim($("#keywords").val()) == ""){
+        $("#keywords").focus();
+    }	
+    
+    $("#global_header_righter").html(
+        '<a href="https://www.ablesci.com/" target="_blank" onclick="javascript:clickAdd(16)"><font style="color:#f30;font-weight:bold;">科研通免费文献下载</font></a>' +  '　|　'  + '<a href="http://tool.yovisun.com/scihub/" target="_self" onclick="javascript:clickAdd(10)">SCI-Hub可用链接</a>' +  '　|　'  + '<a href="http://tool.yovisun.com/gs/" target="_self" onclick="javascript:clickAdd(14)">Google学术链接<!-- <font style="color:#f00;font-weight:bold;">[New]</font> --></a>' +  '　|　'  + '<a href="http://tool.yovisun.com/journal/" target="_self" onclick="javascript:clickAdd(12)">影响因子查询</a>' +  '　|　'  + '<a href="http://muchong.com/" target="_blank" onclick="javascript:clickAdd(5)">小木虫</a>' +  '　|　'  + '<a href="http://apps.webofknowledge.com/" target="_blank" onclick="javascript:clickAdd(6)">WOS</a>' +  '　|　'  + '<a href="http://www.webofknowledge.com/JCR" target="_blank" onclick="javascript:clickAdd(8)">JCR</a>' +  '　|　'  + '<a href="http://tool.yovisun.com/scihub/donate.php" target="_self" onclick="javascript:clickAdd(13)">捐赠本站</a>'       );
+	
+	
+
+})
+</script>    
+</head>
+
+<body>
+
+ <style type="text/css">
+*{
+    padding:0;
+    margin:0;}
+#global_header{
+    padding:0;
+    margin:0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;}
+#global_header a{
+	color:#06C;
+     text-decoration: none;}
+#global_header a:hover{
+	color:#f60;
+     text-decoration: underline;}
+#global_header{
+	background-color:#efefef;
+    border-bottom:1px solid #999;
+    height:30px;
+    line-height:30px;}
+#global_header .global_header_wrapper{	
+        margin:0 auto;}
+#global_header .global_header_wrapper  #global_header_lefter a{
+     color:#000;
+     text-decoration: none}  
+     #global_header .global_header_wrapper  #global_header_lefter a:hover{
+     color:#000;
+     text-decoration: none}   
+/*
+body{background: #ffffff url('http://tool.yovisun.com/scihub/2019img/2020-spring.png') no-repeat  center 28px;}
+.container{margin-top:78px;background-color:#fff; padding-left:20px;padding-right:20px;border-radius: 10px;}
+h2{color:#d61a11}
+*/
+h2{color:#000}
+
+
+</style>
+
+        
+<!--
+<div class="global_header_wrapper" style="background-color: #fdfdfd;border-bottom: 1px solid #999;text-align:center;line-height:30px;">
+    提醒：近期本站对内容进行了整合，减少了资源的浪费，如果您发现了异常，<a href="#feedbackDlg" data-toggle="modal" title="意见反馈" style=";">请及时反馈与我</a>，谢谢。<a href="http://tool.yovisun.com/donate.php" style="padding-left:20px;" target="_blank">捐赠本站，支持一下</a>    
+</div>
+-->
+
+
+    
+    
+    
+
+<div id="global_header">
+  <div class="global_header_wrapper" style="width:940px;">
+    <div style="float:left;"  id="global_header_lefter"><a href="http://tool.yovisun.com/">YoviSun工具集</a></div>
+    <div style="float:right;margin-left:30px;" id="global_header_righter">       
+    </div>    
+      <div style="clear:both;"></div>
+  </div>
+</div><!-- #global_header end -->
+
+<style>
+.attack-alert{line-height:20px;font-size:14px; margin-top:0px;padding:5px 10px; border: 1px solid #f5c6cb;color:#721c24;background-color:#f8d7da;text-align:center;}
+</style>
+<div class="attack-alert">
+很遗憾的通知您，我们的服务器正在被恶意攻击中，给您带来的不便望请谅解<br>
+您现在看到的是临时页面，我们检测到攻击结束后，会重新打开系统<br>请同行们手下留情，您的攻击只会坚定我公益服务的决心
+</div>
+     
+<link rel='stylesheet' type='text/css' href='../static_res/css/cikonss.css' /> 
+
+<!-- Button to trigger modal -->
+<a href="#feedbackDlg" data-toggle="modal" title="意见反馈" style="position: fixed;right: 20px;top: 100px;"><span class="ckicon ckicon-small ckicon-rounded"><span class="ckicon-comment-text"></span></span></a>
+ 
+<!-- Modal -->
+<div id="feedbackDlg" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">欢迎对本站提出建议和反馈</h3>
+  </div>
+  <div class="modal-body">
+      
+      <div>
+      	<textarea rows="4" style="width:500px;" id="feedback_conetnt" placeholder="请输入建议反馈内容"></textarea>
+      </div>
+      <div>
+          <span>E-mail：</span><input  type="text" id="feedback_contact" placeholder="请输入邮箱地址"><span style="font-size:12px;color:#999;padding-left:20px;padding-bottom:5px;">不会被公开，仅用于我回信给你</span>
+      </div>
+      <div style="font-size:12px;">
+          <script>
+          document.write('来源地址：' + window.location.href);
+          </script>
+      </div>
+     
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+    <button class="btn btn-primary" onclick="sendFeedback();">提交</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="feedbackDlgResult" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-body" >
+         
+  </div>
+    <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+  </div>
+</div>
+
+<script>
+/*
+*	搜索提交判断
+*/
+function sendFeedback(){
+
+    var feedback_conetnt = $.trim($("#feedback_conetnt").val());
+    var feedback_contact = $.trim($("#feedback_contact").val());
+    
+
+	if(feedback_conetnt ==""){
+		alert("请输入内容");
+		$("#feedback_conetnt").focus();
+		return false;
+	}	
+    
+    if(feedback_contact ==""){
+		alert("请输入联系方式");
+		$("#feedback_contact").focus();
+		return false;
+	}
+   
+    
+    $.ajax({
+        type:"POST",
+        url:"/ajaxFeedback.php?t=" + new Date().getTime(),
+        data: {
+            "conetnt": feedback_conetnt,
+            "contact": feedback_contact,
+            "url" : window.location.href
+        },
+        success: function(msg){
+            try{
+                var jsonMsg = eval("(" + msg + ")");                    
+                if(jsonMsg.stats==1){
+                     $('#feedbackDlg').modal('hide');
+                    $('#feedbackDlgResult .modal-body').html('<h3 class="alert alert-success text-center">发送成功，谢谢您的建议</h3>'); 
+                    $('#feedbackDlgResult').modal('show');
+                    setTimeout(function(){
+                        $('#feedbackDlgResult').modal('hide');
+                    },2000); 
+                }else if(jsonMsg.stats==0){
+                    $('#feedbackDlgResult .modal-body').html('<h3 class="alert alert-error text-center">对不起，发送失败，请稍后再试。<br />或者直接给我发邮件：<br />service（At）yovisun.com</h3>'); 
+                    $('#feedbackDlgResult').modal('show');
+                    setTimeout(function(){
+                        $('#feedbackDlgResult').modal('hide');
+                    },5000);
+                }
+               
+            }catch(err){
+                  $('#feedbackDlgResult .modal-body').html('<h3 class="alert alert-error text-center">对不起，系统错误，请稍后再试。<br />或者直接给我发邮件：<br />service（At）yovisun.com</h3>'); 
+                  $('#feedbackDlgResult').modal('show');
+                
+            }
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+             $('#feedbackDlgResult .modal-body').html('<h3 class="alert alert-error text-center">对不起，出现错误，请稍后再试。<br />或者直接给我发邮件：<br />service（At）yovisun.com</h3>'); 
+             $('#feedbackDlgResult').modal('show');
+       
+        }
+    });
+
+    
+    
+}
+    
+</script>
+  
+<script>
+$(document).ready(function(){    
+/*
+    $("#global_header_righter").html(
+        '<a href="http://tool.yovisun.com/journal/">期刊影响因子查询</a> | <a href="http://tool.yovisun.com/scihub/donate.php">捐赠本站</a>'
+       );*/
+})
+</script>
+
+<div id="wraper" class="container">
+
+
+
+    <h2 style="font-size:25px;"><font style="padding-left:20px;">SCI-Hub论文下载可用网址链接 - 实时更新</font><font style=" padding-left:30px;">【...请分享给更多需要的朋友...】</font></h2>
+       <!-- <h2 style="font-size:14px; margin-top:-20px;margin-bottom:0px;padding-left:20px;">愿每个人平安</h2> -->
+
+
+    <div id="help-info">
+    
+    </div>
+    
+    <div id="help-info-hide" >
+        <div class="alert alert-info alert-block" style="font-size:12px;">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <p>
+            本站实时自动检测并更新SCI-Hub的可用网址链接，由于网络及地区（学校）的限制，不一定所有网址都能在您所在的位置访问。通常情况下，<b>一半以上是有效的</b>。 <br><b>SCI-Hub: 科研分享，知识无界，让我们一起消除科学的障碍。</b>本页面长期有效， 如对您有所帮助，请收藏并推荐给需要的朋友。（<a href="http://www.yovisun.com/archive/scihub-links.html" target="_blank">SCI-Hub介绍</a>，<a href="http://www.yovisun.com/archive/scihub-author-info.html" target="_blank">作者自述</a>）<br>如有疑问:
+                        <span style="padding-left:5px;">1. 请先查阅<a href="http://www.yovisun.com/archive/scihub-help.html" target="_blank">《常见问题帮助》</a>，90%的问题可以得到解决，或点击底部的意见反馈，我会第一时间回复你</span><br/>
+                        <span style="padding-left:60px;">2. 请前往我新建的<a href="https://www.ablesci.com/" target="_blank" style="font-weight:bold;color: #d61a11;">【科研通】</a>文献互助公益平台，该平台提供<font style="font-weight:bold;color: #d61a11;">免费智能文献下载服务，机器人20秒内完成下载，完成率达到95%</font>，<a href="https://www.ablesci.com/" target="_blank" style="font-weight:bold;">点击前往科研通=》</a></span><br/>       
+                        <span style="padding-left:60px;display:none;">3. 加入我建立的QQ群，与更多朋友交流互助。<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=9935d2d809447a6093bfed711f59e3846f23d0d9c90e8496f1c033ee63c0729b" alt="SCIHub科研交流-YoviSun" title="SCIHub科研交流-YoviSun">【点击一键加群】</a></span>
+                        <!-- <span style="padding-left:60px;">3. 或加入我建立的QQ群，与更多朋友互助交流。<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=9935d2d809447a6093bfed711f59e3846f23d0d9c90e8496f1c033ee63c0729b" alt="SCIHub科研交流-YoviSun" title="SCIHub科研交流-YoviSun">【点击一键加群】</a>或<a href="javascript:void(0)" data-toggle="modal" data-target="#wxqrModal" alt="SCIHub科研交流-YoviSun" title="SCIHub科研交流-YoviSun">【手机扫描群二维码<i class="icon-qrcode"></i>】</a></span> -->
+                        <!--
+                        <span style="padding-left:60px;">3. 或加入我建立的QQ群，与更多朋友互助交流。<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=98f06f4a36985cf57ecf50debd9b5fe9ef096bf79a8d1eb3d50249f905d0def7" alt="SCIHub科研交流-YoviSun" title="SCIHub科研交流-YoviSun">【点击一键加群】</a>或<a href="javascript:void(0)" data-toggle="modal" data-target="#wxqrModal" alt="SCIHub科研交流-YoviSun" title="SCIHub科研交流-YoviSun">【手机扫描群二维码<i class="icon-qrcode"></i>】</a>（请先自己努力尝试，尽量不要做伸手党）</span>
+                        -->
+                        <span style="padding-left:60px;">3. 如果您还是无法获得文献，可以加入我建立的QQ群。<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=be75dbbd4b64f9ceb5e3c6c9ba30576092e104e683937bf6765954a6d16ec3dc">【点击一键加群】</a>或<a href="javascript:void(0)" data-toggle="modal" data-target="#wxqrModal" alt="SCIHub科研交流-YoviSun" title="SCIHub科研交流-YoviSun">【手机扫描群二维码<i class="icon-qrcode"></i>】</a>（请先自己努力尝试，尽量不要做伸手党）</span>
+                        <!-- 
+                        //shang.qq.com/wpa/qunwpa?idkey=0cbed73c6e8da484b26c84bd42789318eeacc829ba82940e33a1e109ccbb2a6a"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png
+                        -->
+                        
+                        </p>    
+	    </div>
+	    
+	    <!-- Modal -->
+        <div id="wxqrModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width:360px;">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel" style="font-size:20px;">欢迎加入SCIHub科研交流-QQ群</h3>
+          </div>
+          <div class="modal-body">
+            <p style="text-align:center">
+            <img src="http://tool.yovisun.com/scihub/hubimg/qqhub-10.png" title="SCIHub科研交流群-YoviSun" alt="SCIHub科研交流群-YoviSun">
+            </p>
+            <p style="text-align:center">
+            请使用手机QQ扫一扫上面的二维码，加入群聊。
+            </p>
+            <p style="text-align:center; font-size:14px;">
+            或查找QQ群号【535510933】加入<!-- 965903276 -->
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+          </div>
+        </div>
+
+    </div>
+    
+    
+    <div id="spider_list" style="margin-bottom:10px;">
+        <table class="table table-striped nth-child table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>域名</th>
+                    <th>SSL安全链接</th>
+                    <th>状态</th>
+                    <th>最后检测时间</th>
+                </tr>
+            </thead>
+                        <tr id="96" class="item">
+                    <td class="id" style="color:#468847;font-weight:bold;text-align:center;">√</td>
+                    <td class="domain">
+                        <a href="http://sci-hub.tw" target="_blank" onclick="javascript:scihub_clickLinkAdd('96')">http://sci-hub.tw</a></td>
+                        <td class="domainssl"><a href="https://sci-hub.tw" target="_blank" onclick="javascript:scihub_clickLinkAdd('96')">https://sci-hub.tw</a>
+                        </td>
+                    <td class="status"><span class="label label-success" style="padding:3px 10px;text-align:center;">可用</span></td>
+                    <td class="record_time">2020-06-12 13:53:11</td>
+                </tr> 
+                            <tr id="180" class="item">
+                    <td class="id" style="color:#468847;font-weight:bold;text-align:center;">√</td>
+                    <td class="domain">
+                        <a href="http://sci-hub.se" target="_blank" onclick="javascript:scihub_clickLinkAdd('180')">http://sci-hub.se</a></td>
+                        <td class="domainssl"><a href="https://sci-hub.se" target="_blank" onclick="javascript:scihub_clickLinkAdd('180')">https://sci-hub.se</a>
+                        </td>
+                    <td class="status"><span class="label label-success" style="padding:3px 10px;text-align:center;">可用</span></td>
+                    <td class="record_time">2020-06-12 13:51:22</td>
+                </tr> 
+                            <tr id="185" class="item">
+                    <td class="id" style="color:#468847;font-weight:bold;text-align:center;">√</td>
+                    <td class="domain">
+                        <a href="http://sci-hub.st" target="_blank" onclick="javascript:scihub_clickLinkAdd('185')">http://sci-hub.st</a></td>
+                        <td class="domainssl"><a href="https://sci-hub.st" target="_blank" onclick="javascript:scihub_clickLinkAdd('185')">https://sci-hub.st</a>
+                        </td>
+                    <td class="status"><span class="label label-success" style="padding:3px 10px;text-align:center;">可用</span></td>
+                    <td class="record_time">2020-06-12 13:50:30</td>
+                </tr> 
+                    </table>
+        
+                <!--
+         <div style="font-size:14px;color:#f30; padding:10px; border:2px dashed #f40;">
+    对不起，当前未检测到可用的网址，您可以前往<a href="https://www.ablesci.com/" target="_blank" >【科研通】</a>发布求助，获取文献。您也可以暂时访问以下网站作为临时替代：<a href="https://scihub.bban.top/" target="_blank">https://scihub.bban.top/</a>，<a href="https://www.sci-hub.shop/" target="_blank">https://www.sci-hub.shop/</a>，注意：这些网站非官方网站，现在是临时方案，如非必要，请尽量不要访问。我会尽快人工查找可用的域名，给您带来的不便敬请谅解。
+    </div>
+    -->
+        
+    </div>
+    <div style="font-size:12px;line-height:16px;">注：上述域名经过程序检测及人工二次校核，为SciHub官方网站。对于其他域名（如：sci-hub.shop，sci-hub.ren），也许可用，但均为<span style="color:#000">伪装或钓鱼网站</span>，不建议使用。</div>
+       <div style="font-size:12px;color:#468847;line-height:16px;margin-top:5px;">提示：近期，您在SciHub下载论文时，会看到SciHub的创始人Alexandra女士向您挥手的动画，请放心，您的访问没有任何问题，是官方网站。<br>　　　如果您感到不适，可以前往科研通求助，科研通与SciHub是战略伙伴，两者的文献库是共通的。</div>
+    <!--
+    <div style="font-size:12px;">
+    如果您确实无法打开上述官方网址，可以尝试使用这2个伪装网站：<a href="https://scihub.bban.top/" target="_blank">https://scihub.bban.top/</a>，<a href="https://www.sci-hub.shop/" target="_blank">https://www.sci-hub.shop/</a>。再次提醒，由于目前是特殊时期，如非必要请不要使用这2个网站。
+    </div>
+    -->
+    <div style="font-size:12px;line-height:16px;margin-top:5px;">
+        提醒：如果您在scihub下载遇到问题，请前往<a href="https://www.ablesci.com/" target="_blank" >【科研通】</a>发布求助，机器人24小时在线，帮你免费极速下载，科研通的文献库比SCIHUB拥有的还大，机器人和人工双重保障。<br>　　　本人良心出品黑科技，好东西希望大家用起来。
+    </div>
+	<style>
+	    #scitech_today{margin-top:30px;margin-bottom:20px}
+	    .today_titel{text-align:center; font-size:16px;}
+	    .today_content{height:45px; overflow:hidden;}
+	    .today_content p{margin-bottom:5px; text-indent:2em; }
+	    .today_more{text-align:center; margin-top:10px;}
+	    .today_more a{color:#000;text-decoration:none;}
+	    .today_more a:hover{color:#08c;text-decoration:none;}
+	    #footer{margin:0 auto;margin-top:40px; padding-top:5px; font-size:12px; border-top:1px solid #aeaeae; width:400px;}
+	</style>
+	<script>
+        function show_today(){
+            $(".today_content").css('height', 'auto');
+            $.get("scihub_ajax_click.php?rands=" + new Date().valueOf(), {"type":"scitech_today"} );
+            $(".today_more").remove();
+        }
+    </script>
+	
+	
+     <div id="footer" class="text-center" style="margin:0 auto;margin-bottom:20px;margin-top:20px;background-color: #fff;font-size:12px;border-top:1px solid #aeaeae; width:400px;">Copyright &copy; 2010-2020 <a href="http://www.yovisun.com/" target="_blank" style="color:#000;">YoviSun.COM</a>, All Right Reserved<a href="#feedbackDlg" data-toggle="modal" title="意见反馈" style="padding-left:10px; color:#000;">意见反馈</a>
+ <br><a style="color:#000;" href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备12009978号-4</a>. <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102000464" style="color:#000;" >鄂公网安备 42011102000464号</a>
+ <a href="http://tool.yovisun.com/scihub/donate.php" target="_blank" style="color:#000;padding-left:5px;">捐赠</a></div><!-- #footer end --> 
+ 
+  
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"189.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+ 
+
+   
+<!-- 百度统计 -->
+<div class="tongji" style="display:none;">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?44a5dca08d6c959322ef76aaa34e6a28";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div> 
+<!-- end 统计 --> 
+
+<!-- 访问统计代码 -->
+<div style="display:none">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?dfa82c91e827d1ab70e7b639b048d92d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div>
+<!-- # end 统计 -->   
+    
+</div><!-- #wraper end -->
+
+</body>
+</html>

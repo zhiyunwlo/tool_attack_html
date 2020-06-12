@@ -1,0 +1,360 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="提供谷歌学术（Google Scholar）和谷歌搜索的最新可用网址，高效秒开谷歌所有站点，自动检测实时更新，可免费下载国内外广大文献论文，为广大科研工作者提供全方位服务。">
+    <meta name="keywords" content="谷歌学术,谷歌镜像,Google, Google Scholar,可用链接,SCI查询科研论文,论文下载,YoviSun">
+    <title>谷歌学术『Google』最新可用网址（自动检测） - YoviSun工具集</title>
+    <link rel='stylesheet' type='text/css' href='http://lib.sinaapp.com/js/bootstrap/2.3.1/css/bootstrap.min.css' />
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+    <script language='javascript' src='http://lib.sinaapp.com/js/bootstrap/2.3.1/js/bootstrap.min.js'></script>
+    <script language='javascript' src='js/layer/layer.js'></script>
+    <script>
+        if (self!=top){
+            window.top.location.replace(self.location); //打开自己网站的页面
+        }
+        
+        function gs_clickLinkAdd(id){
+            $.get("gs_ajax_click.php?rands=" + new Date().valueOf(), { "id": id ,"type":"gs"} );
+        }
+    </script>
+
+    
+<script>
+/*
+*	搜索提交判断
+*/
+function checkSearch(obj){
+	$("#keywords").val($.trim($("#keywords").val()));
+	if($("#keywords").val()==""){
+		alert("请输入搜索关键词");
+		$("#keywords").focus();
+		return false;
+	}	
+}
+    
+    
+function clickAdd(id){
+    $.get("/journal/ajax_click.php?rands=" + new Date().valueOf(), { "id": id ,"type":"headmenu"} );
+}
+
+
+$(document).ready(function(){
+    if($.trim($("#keywords").val()) == ""){
+        $("#keywords").focus();
+    }	
+    
+    $("#global_header_righter").html(
+        '<a href="https://www.ablesci.com/" target="_blank" onclick="javascript:clickAdd(16)"><font style="color:#f30;font-weight:bold;">科研通免费文献下载</font></a>' +  '　|　'  + '<a href="http://tool.yovisun.com/scihub/" target="_self" onclick="javascript:clickAdd(10)">SCI-Hub可用链接</a>' +  '　|　'  + '<a href="http://tool.yovisun.com/gs/" target="_self" onclick="javascript:clickAdd(14)">Google学术链接<!-- <font style="color:#f00;font-weight:bold;">[New]</font> --></a>' +  '　|　'  + '<a href="http://tool.yovisun.com/journal/" target="_self" onclick="javascript:clickAdd(12)">影响因子查询</a>' +  '　|　'  + '<a href="http://muchong.com/" target="_blank" onclick="javascript:clickAdd(5)">小木虫</a>' +  '　|　'  + '<a href="http://apps.webofknowledge.com/" target="_blank" onclick="javascript:clickAdd(6)">WOS</a>' +  '　|　'  + '<a href="http://www.webofknowledge.com/JCR" target="_blank" onclick="javascript:clickAdd(8)">JCR</a>' +  '　|　'  + '<a href="http://tool.yovisun.com/scihub/donate.php" target="_self" onclick="javascript:clickAdd(13)">捐赠本站</a>'       );
+	
+	
+
+})
+</script>
+</head>
+
+<body>
+
+ <style type="text/css">
+*{
+    padding:0;
+    margin:0;}
+#global_header{
+    padding:0;
+    margin:0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;}
+#global_header a{
+	color:#06C;
+     text-decoration: none;}
+#global_header a:hover{
+	color:#f60;
+     text-decoration: underline;}
+#global_header{
+	background-color:#efefef;
+    border-bottom:1px solid #999;
+    height:30px;
+    line-height:30px;}
+#global_header .global_header_wrapper{	
+        margin:0 auto;}
+#global_header .global_header_wrapper  #global_header_lefter a{
+     color:#000;
+     text-decoration: none}  
+     #global_header .global_header_wrapper  #global_header_lefter a:hover{
+     color:#000;
+     text-decoration: none}   
+/*
+body{background: #ffffff url('http://tool.yovisun.com/scihub/2019img/2020-spring.png') no-repeat  center 28px;}
+.container{margin-top:78px;background-color:#fff; padding-left:20px;padding-right:20px;border-radius: 10px;}
+h2{color:#d61a11}
+*/
+h2{color:#000}
+
+
+</style>
+
+        
+<!--
+<div class="global_header_wrapper" style="background-color: #fdfdfd;border-bottom: 1px solid #999;text-align:center;line-height:30px;">
+    提醒：近期本站对内容进行了整合，减少了资源的浪费，如果您发现了异常，<a href="#feedbackDlg" data-toggle="modal" title="意见反馈" style=";">请及时反馈与我</a>，谢谢。<a href="http://tool.yovisun.com/donate.php" style="padding-left:20px;" target="_blank">捐赠本站，支持一下</a>    
+</div>
+-->
+
+
+    
+    
+    
+
+<div id="global_header">
+  <div class="global_header_wrapper" style="width:940px;">
+    <div style="float:left;"  id="global_header_lefter"><a href="http://tool.yovisun.com/">YoviSun工具集</a></div>
+    <div style="float:right;margin-left:30px;" id="global_header_righter">       
+    </div>    
+      <div style="clear:both;"></div>
+  </div>
+</div><!-- #global_header end -->
+
+<style>
+.attack-alert{line-height:20px;font-size:14px; margin-top:0px;padding:5px 10px; border: 1px solid #f5c6cb;color:#721c24;background-color:#f8d7da;text-align:center;}
+</style>
+<div class="attack-alert">
+很遗憾的通知您，我们的服务器正在被恶意攻击中，给您带来的不便望请谅解<br>
+您现在看到的是临时页面，我们检测到攻击结束后，会重新打开系统<br>请同行们手下留情，您的攻击只会坚定我公益服务的决心
+</div>
+     
+<link rel='stylesheet' type='text/css' href='../static_res/css/cikonss.css' /> 
+
+<!-- Button to trigger modal -->
+<a href="#feedbackDlg" data-toggle="modal" title="意见反馈" style="position: fixed;right: 20px;top: 100px;"><span class="ckicon ckicon-small ckicon-rounded"><span class="ckicon-comment-text"></span></span></a>
+ 
+<!-- Modal -->
+<div id="feedbackDlg" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">欢迎对本站提出建议和反馈</h3>
+  </div>
+  <div class="modal-body">
+      
+      <div>
+      	<textarea rows="4" style="width:500px;" id="feedback_conetnt" placeholder="请输入建议反馈内容"></textarea>
+      </div>
+      <div>
+          <span>E-mail：</span><input  type="text" id="feedback_contact" placeholder="请输入邮箱地址"><span style="font-size:12px;color:#999;padding-left:20px;padding-bottom:5px;">不会被公开，仅用于我回信给你</span>
+      </div>
+      <div style="font-size:12px;">
+          <script>
+          document.write('来源地址：' + window.location.href);
+          </script>
+      </div>
+     
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+    <button class="btn btn-primary" onclick="sendFeedback();">提交</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="feedbackDlgResult" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-body" >
+         
+  </div>
+    <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+  </div>
+</div>
+
+<script>
+/*
+*	搜索提交判断
+*/
+function sendFeedback(){
+
+    var feedback_conetnt = $.trim($("#feedback_conetnt").val());
+    var feedback_contact = $.trim($("#feedback_contact").val());
+    
+
+	if(feedback_conetnt ==""){
+		alert("请输入内容");
+		$("#feedback_conetnt").focus();
+		return false;
+	}	
+    
+    if(feedback_contact ==""){
+		alert("请输入联系方式");
+		$("#feedback_contact").focus();
+		return false;
+	}
+   
+    
+    $.ajax({
+        type:"POST",
+        url:"/ajaxFeedback.php?t=" + new Date().getTime(),
+        data: {
+            "conetnt": feedback_conetnt,
+            "contact": feedback_contact,
+            "url" : window.location.href
+        },
+        success: function(msg){
+            try{
+                var jsonMsg = eval("(" + msg + ")");                    
+                if(jsonMsg.stats==1){
+                     $('#feedbackDlg').modal('hide');
+                    $('#feedbackDlgResult .modal-body').html('<h3 class="alert alert-success text-center">发送成功，谢谢您的建议</h3>'); 
+                    $('#feedbackDlgResult').modal('show');
+                    setTimeout(function(){
+                        $('#feedbackDlgResult').modal('hide');
+                    },2000); 
+                }else if(jsonMsg.stats==0){
+                    $('#feedbackDlgResult .modal-body').html('<h3 class="alert alert-error text-center">对不起，发送失败，请稍后再试。<br />或者直接给我发邮件：<br />service（At）yovisun.com</h3>'); 
+                    $('#feedbackDlgResult').modal('show');
+                    setTimeout(function(){
+                        $('#feedbackDlgResult').modal('hide');
+                    },5000);
+                }
+               
+            }catch(err){
+                  $('#feedbackDlgResult .modal-body').html('<h3 class="alert alert-error text-center">对不起，系统错误，请稍后再试。<br />或者直接给我发邮件：<br />service（At）yovisun.com</h3>'); 
+                  $('#feedbackDlgResult').modal('show');
+                
+            }
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+             $('#feedbackDlgResult .modal-body').html('<h3 class="alert alert-error text-center">对不起，出现错误，请稍后再试。<br />或者直接给我发邮件：<br />service（At）yovisun.com</h3>'); 
+             $('#feedbackDlgResult').modal('show');
+       
+        }
+    });
+
+    
+    
+}
+    
+</script>
+
+<div id="wraper" class="container" style="margin-bottom:10px;">
+    <h2 style="font-size:25px;"><font style="padding-left:20px;">谷歌学术『Google』最新可用网址 - 自动更新 [Beta]</font></h2>
+
+
+    <div class="alert alert-info alert-block" style="font-size:12px; margin-bottom:10px;">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <p>
+            本站收集目前可用的谷歌学术，谷歌搜索镜像网站，服务器和客户端双向实时更新，通常一半以上有效。服务器端最后更新时间：<span class="label label-success"><strong>2020-06-12 13:59:37</strong></span><br>
+            说明：（１）以下数据来自互联网，我会对网站进行权衡才会推荐给大家，但具体镜像内容请各位慎酌。特别是镜像内大都含有广告，请谨慎点击。<br>
+            　　　（２）若检测链接大多超时，请刷新网页(或按Ctrl+F5键)。请不要在镜像网站上登录谷歌账户，也不要搜索敏感词汇。<br>
+            　　　（３）部分网页的界面非原始Google风格，但搜索结果都是从Google提取的，已验证，请放心使用。<br>
+            <strong>请安全、合法地使用导航。本站提供的均为个人无偿志愿服务。本页面长期有效， 如对您有所帮助，请收藏并推荐给需要的朋友。目前为测试版，欢迎大家<a href="#feedbackDlg" data-toggle="modal" title="意见反馈" >反馈</a>。</strong>
+        </p>
+    </div>
+
+
+    <div id="spider_list" style="line-height:200% !important" class="row">
+    
+        <div class="span6">
+            <h2 id='donate-namelist' class="gs-title"><img src="images/g-search.svg" style="line-height:40px;height:28px;padding-right:10px;" />谷歌网页搜索</h2>
+            <table class="table table-striped nth-child table-hover table-bordered" id='gs-search'>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>官网</td>
+                        <td colspan="2">「美国」<a href="http://www.google.com" target="_blank">www.google.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>　　</td>
+                        <td colspan="2">「中国香港」<a href="http://www.google.com.hk" target="_blank">www.google.com.hk</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+        <div class="span6">
+            <h2 id='donate-namelist' class="gs-title"><img src="images/g-scholar.svg" style="line-height:40px;height:28px;padding-right:10px;" />谷歌学术</h2>
+            <table class="table table-striped nth-child table-hover table-bordered" id='gs-scholar'>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>官网</td>
+                        <td colspan="2">「美国」<a href="http://scholar.google.com" target="_blank">scholar.google.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>　　</td>
+                        <td colspan="2">「中国香港」<a href="http://scholar.google.com.hk" target="_blank">scholar.google.com.hk</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    
+    <div style="font-size:18px;text-align:center;color: #f00;margin-bottom:10px; display:none" class="detect-msg"></div>
+    <div style="font-size:18px;text-align:center;color: #006621;font-weight:bold;">站在巨人的肩膀上</div>
+    
+    <img src="images/loading.gif" style='display:none;'>
+    
+     <div id="footer" class="text-center" style="margin:0 auto;margin-bottom:20px;margin-top:20px;background-color: #fff;font-size:12px;border-top:1px solid #aeaeae; width:400px;">Copyright &copy; 2010-2020 <a href="http://www.yovisun.com/" target="_blank" style="color:#000;">YoviSun.COM</a>, All Right Reserved<a href="#feedbackDlg" data-toggle="modal" title="意见反馈" style="padding-left:10px; color:#000;">意见反馈</a>
+ <br><a style="color:#000;" href="http://www.miibeian.gov.cn/" target="_blank">鄂ICP备12009978号-4</a>. <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42011102000464" style="color:#000;" >鄂公网安备 42011102000464号</a>
+ <a href="http://tool.yovisun.com/scihub/donate.php" target="_blank" style="color:#000;padding-left:5px;">捐赠</a></div><!-- #footer end --> 
+ 
+  
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"189.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+ 
+
+   
+<!-- 百度统计 -->
+<div class="tongji" style="display:none;">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?44a5dca08d6c959322ef76aaa34e6a28";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div> 
+<!-- end 统计 --> 
+
+<!-- 访问统计代码 -->
+<div style="display:none">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?dfa82c91e827d1ab70e7b639b048d92d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div>
+<!-- # end 统计 --> 
+</div><!-- #wraper end -->
+
+
+
+<style>
+    table tbody tr td:nth-child(1){width:80px;}
+    table tbody tr td:nth-child(2){width:150px; font-weight:bold;}
+    table tbody tr td:nth-child(3){font-weight:bold;}
+    table tbody tr .error{color:#f00;}
+
+    .gs-title{font-size:22px; color:#4285f4;text-align:center;}
+    .golink a{color:#006621}
+    .error-open{font-weight:normal; color:#000;font-size:12px;}
+    .error-open:hover{color:#f00}
+    table a:hover{color:#f00}
+    #footer{margin:0 auto;margin-top:20px; padding-top:5px; font-size:12px; border-top:1px solid #aeaeae; width:400px;}
+</style>
+
+<script>
+    var gs_links = [{"id":"8","url":"https:\/\/scholar.123admin.com\/","ajax_url":"https:\/\/scholar.123admin.com\/gimage\/logo.png","ajax_type":"img","note":"","tips":"","type":"scholar"},{"id":"11","url":"http:\/\/nav.hiqq.com.cn\/twy\/","ajax_url":"http:\/\/nav.hiqq.com.cn\/static\/logo2.png","ajax_type":"img","note":"","tips":"","type":"search"},{"id":"3","url":"https:\/\/xueshu.soogle.top\/","ajax_url":"https:\/\/xueshu.soogle.top\/static\/2x\/scholar_logo_64dp.png","ajax_type":"img","note":"","tips":"","type":"scholar"},{"id":"25","url":"https:\/\/goobe.io\/","ajax_url":"https:\/\/goobe.io\/zh-cn\/templates\/img\/logo-blue.png","ajax_type":"img","note":"","tips":"","type":"search"},{"id":"4","url":"https:\/\/xs.glgoo.top\/","ajax_url":"https:\/\/xs.glgoo.top\/intl\/zh-CN\/scholar\/images\/2x\/scholar_logo_64dp.png","ajax_type":"img","note":"","tips":"","type":"scholar"},{"id":"6","url":"https:\/\/e.glgoo.top\/scholar\/","ajax_url":"https:\/\/e.glgoo.top\/intl\/zh-CN\/scholar\/images\/1x\/scholar_logo_24dp.png","ajax_type":"img","note":"","tips":"","type":"scholar"},{"id":"24","url":"https:\/\/suche.dasnetzundich.de\/ ","ajax_url":"https:\/\/suche.dasnetzundich.de\/static\/themes\/oscar\/img\/logo_searx_a.png","ajax_type":"img","note":"","tips":"","type":"search"},{"id":"23","url":"https:\/\/seeres.com\/ ","ajax_url":"https:\/\/seeres.com\/img\/seeres-logo.png","ajax_type":"img","note":"","tips":"","type":"search"},{"id":"1","url":"https:\/\/g3.luciaz.me\/extdomains\/scholar.google.com\/","ajax_url":"https:\/\/g3.luciaz.me\/extdomains\/scholar.google.com\/","ajax_type":"jsonp","note":"","tips":"\u8be5\u955c\u50cf\u7a33\u5b9a\u5feb\u901f\u65e0\u5e7f\u544a\uff0c\u4f46IP\u9996\u6b21\u4f7f\u7528\u9700\u8981\u56de\u7b54\u95ee\u9898\uff0c\u56de\u7b54\u6b63\u786e\u5373\u53ef\u4e00\u76f4\u4f7f\u7528<br><br>\u5176\u4e2d\u4e00\u4e2a\u95ee\u53d1\u5e16\u91cf\u6700\u5927\u7684\u7248\u5757\uff0c\u7b54\u6848\u4e3a\uff1a\u5fc3\u7075\u4e4b\u7ea6","type":"scholar"},{"id":"14","url":"https:\/\/jpso.azurewebsites.net\/","ajax_url":"https:\/\/jpso.azurewebsites.net\/favicon.ico","ajax_type":"img","note":"","tips":"","type":"search"},{"id":"16","url":"http:\/\/n.gg456.top\/","ajax_url":"http:\/\/n.gg456.top\/images\/nav_logo299.webp","ajax_type":"img","note":"","tips":"","type":"search"},{"id":"18","url":"https:\/\/g.luciaz.me\/extdomains\/www.google.com","ajax_url":"https:\/\/g.luciaz.me\/extdomains\/www.google.com","ajax_type":"jsonp","note":"","tips":"\u8be5\u955c\u50cf\u7a33\u5b9a\u5feb\u901f\u65e0\u5e7f\u544a\uff0c\u4f46IP\u9996\u6b21\u4f7f\u7528\u9700\u8981\u56de\u7b54\u95ee\u9898\uff0c\u56de\u7b54\u6b63\u786e\u5373\u53ef\u4e00\u76f4\u4f7f\u7528<br><br>\u5176\u4e2d\u4e00\u4e2a\u95ee\u53d1\u5e16\u91cf\u6700\u5927\u7684\u7248\u5757\uff0c\u7b54\u6848\u4e3a\uff1a\u5fc3\u7075\u4e4b\u7ea6","type":"search"},{"id":"20","url":"https:\/\/g.netis.io\/scholar","ajax_url":"https:\/\/g.netis.io\/intl\/zh-CN\/scholar\/images\/2x\/scholar_logo_64dp.png","ajax_type":"img","note":"","tips":"","type":"scholar"},{"id":"9","url":"https:\/\/g.luciaz.me\/extdomains\/scholar.google.com\/","ajax_url":"https:\/\/g.luciaz.me\/extdomains\/scholar.google.com\/","ajax_type":"jsonp","note":"","tips":"\u8be5\u955c\u50cf\u7a33\u5b9a\u5feb\u901f\u65e0\u5e7f\u544a\uff0c\u4f46IP\u9996\u6b21\u4f7f\u7528\u9700\u8981\u56de\u7b54\u95ee\u9898\uff0c\u56de\u7b54\u6b63\u786e\u5373\u53ef\u4e00\u76f4\u4f7f\u7528<br><br>\u5176\u4e2d\u4e00\u4e2a\u95ee\u53d1\u5e16\u91cf\u6700\u5927\u7684\u7248\u5757\uff0c\u7b54\u6848\u4e3a\uff1a\u5fc3\u7075\u4e4b\u7ea6","type":"scholar"},{"id":"13","url":"http:\/\/conch.interfree.net\/webhp","ajax_url":"http:\/\/conch.interfree.net\/images\/nav_logo299.webp","ajax_type":"img","note":"","tips":"","type":"search"},{"id":"10","url":"https:\/\/g3.luciaz.me\/extdomains\/www.google.com\/","ajax_url":"https:\/\/g3.luciaz.me\/extdomains\/www.google.com\/","ajax_type":"jsonp","note":"","tips":"\u8be5\u955c\u50cf\u7a33\u5b9a\u5feb\u901f\u65e0\u5e7f\u544a\uff0c\u4f46IP\u9996\u6b21\u4f7f\u7528\u9700\u8981\u56de\u7b54\u95ee\u9898\uff0c\u56de\u7b54\u6b63\u786e\u5373\u53ef\u4e00\u76f4\u4f7f\u7528<br><br>\u5176\u4e2d\u4e00\u4e2a\u95ee\u53d1\u5e16\u91cf\u6700\u5927\u7684\u7248\u5757\uff0c\u7b54\u6848\u4e3a\uff1a\u5fc3\u7075\u4e4b\u7ea6","type":"search"},{"id":"12","url":"http:\/\/googlebridge.com\/","ajax_url":"http:\/\/googlebridge.com\/","ajax_type":"jsonp","note":"","tips":"\u754c\u9762\u4e11\u964b\uff0c\u4f46\u5e72\u51c0\u7a33\u5b9a\u5feb\u901f","type":"search"},{"id":"21","url":"https:\/\/gg.i-research.edu.eu.org\/","ajax_url":"https:\/\/gg.i-research.edu.eu.org\/","ajax_type":"jsonp","note":"","tips":"","type":"search"},{"id":"22","url":"http:\/\/p.izhaolei.com\/ ","ajax_url":"http:\/\/p.izhaolei.com\/ ","ajax_type":"jsonp","note":"","tips":"","type":"search"},{"id":"19","url":"https:\/\/g.netis.io\/","ajax_url":"https:\/\/g.netis.io\/intl\/zh-CN\/scholar\/images\/2x\/scholar_logo_64dp.png","ajax_type":"img","note":"","tips":"","type":"search"}];
+    var num_time_out = 0;
+    var num_success = 0;
+    var num_ajax_finish = 0;
+    var num_ajax_all = gs_links.length;
+</script>
+<script language='javascript' src='js/f-190820v2.js'></script>
+</body>
+</html>
